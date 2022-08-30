@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="icon" href="/chillpill/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Recovery</title>
+    <script type="module" crossorigin src="/chillpill/assets/forgetPassword.js"></script>
+    <link rel="modulepreload" crossorigin href="/chillpill/assets/modulepreload-polyfill.js">
+    <link rel="modulepreload" crossorigin href="/chillpill/assets/module.esm.js">
+    <link rel="modulepreload" crossorigin href="/chillpill/assets/anim.js">
+    <link rel="stylesheet" href="/chillpill/assets/index.css">
+  </head>
+  <body class="forgetPassword">
+    <canvas id="anim-canvas" class="z-0 absolute"></canvas>
+    <div class="hero min-h-screen relative overflow-hidden">
+      <div
+        class="hero-content md:bg-primary-content p-10 md:p-20 rounded-xl md:shadow-xl flex-col lg:flex-row-reverse lg:gap-10"
+      >
+        <div class="text-center lg:text-left flex-1 lg:self-start md:text-secondary-content">
+          <h1 class="text-5xl font-bold">
+            TAKE A <br />
+            <span class="text-secondary">CHILL</span>
+            <span class="text-secondary">PILL</span>
+          </h1>
+          <p class="py-6 leading-9 tracking-wider font-normal normal-case">
+            A recovery link will be sent to this email if we found this email in our registered user
+            list.
+            <br />
+            Then you'll be able reset your password by clicking that link.
+          </p>
+        </div>
+        <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div class="card-body">
+            <form action="">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Email</span>
+                </label>
+                <input type="email" placeholder="email" class="input input-bordered" />
+              </div>
+              <div class="form-control mt-6">
+                <input type="submit" class="btn btn-primary" value="Send Recovery Link" />
+              </div>
+              <label class="label">
+                <a href="/" class="label-text-alt link link-hover ml-auto">Login</a>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
